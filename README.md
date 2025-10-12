@@ -1,13 +1,79 @@
-# Tech stack
-- Python 3.x
-- venv  - virtual environment
-- pydoc - documentation generator
+# :video_game: Tic-Tac-Toe (Python Essentials 1)
 
-# Assumptions (from the Python Essentials 1 course)
-- the program should play the game using 'X's;
-- the user should play the game using 'O's;
-- the first move belongs to the program − it always puts its first 'X' in the middle of the board;
-- all the squares are numbered row by row starting with 1
-- the user inputs their move by entering the number of the square they choose − the number must be valid, i.e., it must be an    integer, it must be greater than 0 and less than 10, and it cannot point to a field which is already occupied;
-- the program checks if the game is over − there are four possible verdicts: the game should continue, the game ends with a tie, you win, or the computer wins;
-- the computer responds with its move and the check is repeated;
+A simple **Tic-Tac-Toe** game written in Python as part of the *Python Essentials 1* course.  
+The program lets you play against the computer in a text-based console version of the game.
+
+---
+
+## :toolbox: Tech stack
+| Tool / Library | Purpose |
+|----------------|----------|
+| **Python 3.x** | Core programming language |
+| **venv** | Virtual environment for dependency isolation |
+| **pydoc** | Built-in documentation generator |
+
+## :jigsaw: Game Rules & Assumptions
+
+These are based on the *Python Essentials 1* course requirements:
+
+- :joystick: The **program** plays as **`X`**  
+- :bust_in_silhouette: The **user** plays as **`O`**
+- :zap: The **program always starts first** — placing its `X` in the **center** of the board
+- :1234: **Board numbering:** Squares are numbered **row by row**, starting from `1` → `9`
+- :speech_balloon: **User input:**  
+  - The user chooses a square by typing its number (`1–9`).  
+  - The move must:
+    - Be an integer
+    - Be within range `1–9`
+    - Point to an **unoccupied** field
+- :brain: **Game logic:**  
+  - The program checks after each move if the game is over
+  - Determines one of four outcomes:
+    1. The game continues  
+    2. **Draw** (no more available moves)  
+    3. **You win** :trophy:  
+    4. **Computer wins** :computer:
+
+---
+
+## :arrow_forward: Example Run
+
+```bash
+$ python tic_tac_toe.py
+
+Welcome to Tic-Tac-Toe!
+You play as O. Computer plays as X.
++-------+-------+-------+
+|       |       |       |
+|   1   |   2   |   3   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   4   |   X   |   6   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   7   |   8   |   9   |
+|       |       |       |
++-------+-------+-------+
+Enter your move (1-9):
+
+...
+
++-------+-------+-------+
+|       |       |       |
+|   O   |   O   |   O   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   X   |   X   |   6   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   X   |   8   |   9   |
+|       |       |       |
++-------+-------+-------+
+Winner: Player
+```
+
+---

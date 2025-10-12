@@ -91,6 +91,9 @@ board: list[list[int]] = [[3 * j + i + 1 for i in range(3)] for j in range(3)]
 
 winner: str | None = None
 
+print("Welcome to Tic-Tac-Toe!")
+print("You play as O. Computer plays as X.")
+
 for i in range(4):
     draw_move(board)
 
