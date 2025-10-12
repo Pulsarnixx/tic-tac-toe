@@ -36,6 +36,21 @@ These are based on the *Python Essentials 1* course requirements:
 
 ---
 
+## :package: Setup
+
+```bash
+
+# Clone the repository
+git clone https://github.com/Pulsarnixx/tic-tac-toe.git
+cd tic-tac-toe
+
+# Run the game
+python tic_tac_toe.py
+
+```
+
+---
+
 ## :arrow_forward: Example Run
 
 ```bash
